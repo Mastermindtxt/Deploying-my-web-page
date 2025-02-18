@@ -17,7 +17,17 @@
     <!-- Particle Background Container -->
     <div id="particle-canvas"></div>
 
-    <!-- Main Navigation (Will add later) -->
+    <!-- Main Navigation -->
+    <nav id="main-nav" class="glass-nav">
+        <div class="nav-brand">TS</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#future">Skills</a></li>
+            <li><button class="contact-trigger">Contact</button></li>
+        </ul>
+    </nav>
     
     <!-- Hero Section -->
     <section id="hero" class="fullscreen-section">
@@ -100,12 +110,39 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p class="powered-by">
-            🚀 Powered by Android & Pure Determination<br>
-            <span class="device-specs">POCO C55 | 4GB RAM | No Laptop Used</span>
-        </p>
+        <div class="footer-contact">
+            <a href="https://t.me/fusion_sprite" class="telegram-button">
+                <svg><!-- Telegram Icon --></svg>
+                Message Now
+            </a>
+        </div>
+        <div class="footer-info">
+            <p>🚀 Powered by Android & Determination</p>
+            <p>📍 Coding From: Smartphone</p>
+        </div>
     </footer>
 
+    <!-- Contact pop up (hidden by default -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content glass-form">
+            <span class="close-modal">&times;</span>
+            <h3>Telegram Direct Line</h3>
+            <form id="telegram-form">
+                <div class="input-group">
+                    <input type="text" id="telegram-handle" 
+                           placeholder="@username" 
+                           pattern="^@\w{5,32}$" 
+                           required>
+                    <label for="telegram-handle">Your Telegram ID</label>
+                </div>
+                <button type="submit" class="telegram-button">
+                    <svg><!-- Paper Plane SVG --></svg>
+                    Initiate Chat
+                </button>
+            </form>
+        </div>
+    </div>
+    
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
