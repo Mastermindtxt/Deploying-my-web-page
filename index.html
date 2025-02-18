@@ -1,14 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MastermindTxt</title>
-  <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanishq Saxena | Shell Wizard & Frontend Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-  <h1>Hey there</h1>
-  <p>site is in maintenance it will be back soon</p>
+<body class="dark-theme">
+    <!-- Particle Background Container -->
+    <div id="particle-canvas"></div>
+
+    <!-- Main Navigation (Will add later) -->
+    
+    <!-- Hero Section -->
+    <section id="hero" class="fullscreen-section">
+        <div class="hero-content">
+            <h1 class="glowing-text">
+                <span class="name-gradient">Tanishq Saxena</span>
+                <span class="tagline">Coding Without Limits</span>
+            </h1>
+            
+            <div class="social-links">
+                <a href="https://t.me/fusion_sprite" class="social-icon telegram" aria-label="Telegram">
+                    <svg><!-- Telegram SVG --></svg>
+                </a>
+                <a href="https://github.com/fusion_sprite" class="social-icon github" aria-label="GitHub">
+                    <svg><!-- GitHub SVG --></svg>
+                </a>
+            </div>
+
+            <div class="device-model" id="smartphone-3d">
+                <!-- Three.js will inject smartphone model here -->
+                <span class="device-caption">Primary Development Device</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="holographic-card">
+            <h2 class="section-title">Bio</h2>
+            <div class="achievement-badge">🏆 Smartphone-Only Coder</div>
+            <p class="bio-text">Self-taught developer mastering Linux...</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="project-grid">
+            <!-- Frames Extractor Card -->
+            <article class="project-card terminal-theme">
+                <h3>Frames Extractor</h3>
+                <div class="code-preview"></div>
+                <span class="mobile-badge">📱 Mobile-Coded</span>
+            </article>
+
+            <!-- Miss Roxy Card -->
+            <article class="project-card telegram-theme">
+                <h3>Miss Roxy Bot</h3>
+                <div class="bot-preview"></div>
+                <span class="mobile-badge">📱 Mobile-Coded</span>
+            </article>
+        </div>
+    </section>
+
+    <!-- Skills & Future Section -->
+    <section id="future" class="section">
+        <div class="circuit-overlay"></div>
+        <h2 class="section-title">Roadmap to Hacking</h2>
+        <div class="roadmap-container"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <form id="telegram-form" class="glass-form">
+            <div class="input-group">
+                <input type="text" id="telegram-handle" placeholder="@username" pattern="^@\w{5,32}$" required>
+                <label for="telegram-handle">Your Telegram</label>
+            </div>
+            
+            <div class="input-group">
+                <textarea id="message" placeholder="Type your message here..." required></textarea>
+                <label for="message">Message</label>
+            </div>
+
+            <button type="submit" class="telegram-button">
+                <span>Launch Message</span>
+                <svg><!-- Paper Plane SVG --></svg>
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="powered-by">
+            🚀 Powered by Android & Pure Determination<br>
+            <span class="device-specs">POCO C55 | 4GB RAM | No Laptop Used</span>
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
