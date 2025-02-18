@@ -4,5 +4,9 @@ h1 {
   width: 70px;
 }
 body {
-  text-align: center;
+  text-aling: center;
+}
+
+p {
+  color: blue;
 }
