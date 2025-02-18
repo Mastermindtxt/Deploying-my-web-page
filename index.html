@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
     <title>Tanishq Saxena | Shell Wizard & Frontend Developer</title>
     
     <!-- Google Fonts -->
@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body class="dark-theme">
     <!-- Particle Background Container -->
@@ -38,16 +38,20 @@
             </h1>
             
             <div class="social-links">
-                <a href="https://t.me/fusion_sprite" class="social-icon telegram" aria-label="Telegram">
-                    <svg><!-- Telegram SVG --></svg>
+                <a href="https://t.me/fusion_sprite" class="social-icon" aria-label="Telegram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19c-.14.72-.41.96-.67.98c-.58.05-.99-.38-1.53-.75c-.85-.58-1.33-.94-2.16-1.51c-.93-.63-1.31-1.02-2.1-1.63c-.91-.7-.23-1.08.14-1.71c.09-.14 1.67-1.54 1.7-1.67c.02-.03.03-.07 0-.1c-.03-.03-.08 0-.11.01c-.05.01-1.13.72-3.19 2.11c-.3.2-.58.29-.83.29c-.27 0-.7-.14-.7-.53c0-.2.15-.74.23-1.01c.35-1.21 2.14-6.38 2.41-7.04c.06-.15.18-.35.47-.35c.26 0 .33.04.45.9c.16 1.2.55 4.09.6 4.51c.05.42.1.31.23.2c.3-.23 1.04-1.03 1.62-1.55c.67-.6.95-.7 1.27-.7c.35 0 .5.17.5.6c0 .3-.07.66-.1.85c-.16.82-.36 1.85-.36 1.98c0 .18.05.29.16.29c.45 0 1.54-1.02 2.03-1.86c.68-1.15.94-2.05.94-2.35c0-.26-.14-.5-.53-.5c-.19 0-.4.07-1.01.68c-.33.33-.64.61-.76.72c-.25.23-.5.46-.73.62c-.25.18-.5.17-.5-.31c0-.35.02-.6.05-.77c.16-.9.47-2.79.47-3.01c0-.09-.02-.17-.07-.23c-.05-.06-.14-.06-.22-.03c-.95.31-2.64 1.67-3.54 2.35"/>
+                    </svg>
                 </a>
-                <a href="https://github.com/fusion_sprite" class="social-icon github" aria-label="GitHub">
-                    <svg><!-- GitHub SVG --></svg>
+                
+                <a href="https://github.com/fusion_sprite" class="social-icon" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V19c0 .27.16.59.67.5C19.14 20.17 22 16.42 22 12A10 10 0 0 0 12 2"/>
+                    </svg>
                 </a>
             </div>
 
             <div class="device-model" id="smartphone-3d">
-                <!-- Three.js will inject smartphone model here -->
                 <span class="device-caption">Primary Development Device</span>
             </div>
         </div>
@@ -55,24 +59,47 @@
 
     <!-- About Section -->
     <section id="about" class="section">
-        <div class="holographic-card">
-            <h2 class="section-title">Bio</h2>
-            <div class="achievement-badge">🏆 Smartphone-Only Coder</div>
-            <p class="bio-text">Self-taught developer mastering Linux...</p>
+        <div class="bio-grid">
+            <!-- 3D Phone Model Column -->
+            <div class="bio-model">
+                <div class="phone-3d-container" id="smartphone-3d"></div>
+                <div class="device-details">
+                    <h3>Mobile Development Rig</h3>
+                    <ul class="spec-list">
+                        <li>📱 POCO C55</li>
+                        <li>⚡ 4GB RAM</li>
+                        <li>🖥️ Termux Linux Environment</li>
+                        <li>🔋 5000mAh Battery</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Bio Content Column -->
+            <div class="bio-content holographic-card">
+                <h2 class="section-title">Code Warrior Journey</h2>
+                <div class="achievement-badge pulse">🚀 100% Mobile-Powered</div>
+                <div class="bio-text">
+                    <p>Self-taught through relentless experimentation:</p>
+                    <ul class="achievement-list">
+                        <li class="glow-item">🛠️ Built complex shell scripts on Termux</li>
+                        <li class="glow-item">📲 Mastered mobile-based development workflows</li>
+                        <li class="glow-item">🔐 Pioneered Android modding without desktop tools</li>
+                        <li class="glow-item">🌐 Currently conquering web development frontiers</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="project-grid">
-            <!-- Frames Extractor Card -->
             <article class="project-card terminal-theme">
                 <h3>Frames Extractor</h3>
                 <div class="code-preview"></div>
                 <span class="mobile-badge">📱 Mobile-Coded</span>
             </article>
 
-            <!-- Miss Roxy Card -->
             <article class="project-card telegram-theme">
                 <h3>Miss Roxy Bot</h3>
                 <div class="bot-preview"></div>
@@ -92,16 +119,20 @@
     <footer class="footer">
         <div class="footer-contact">
             <a href="https://t.me/fusion_sprite" class="telegram-button">
-                <svg><!-- Telegram Icon --></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19c-.14.72-.41.96-.67.98c-.58.05-.99-.38-1.53-.75c-.85-.58-1.33-.94-2.16-1.51c-.93-.63-1.31-1.02-2.1-1.63c-.91-.7-.23-1.08.14-1.71c.09-.14 1.67-1.54 1.7-1.67c.02-.03.03-.07 0-.1c-.03-.03-.08 0-.11.01c-.05.01-1.13.72-3.19 2.11c-.3.2-.58.29-.83.29c-.27 0-.7-.14-.7-.53c0-.2.15-.74.23-1.01c.35-1.21 2.14-6.38 2.41-7.04c.06-.15.18-.35.47-.35c.26 0 .33.04.45.9c.16 1.2.55 4.09.6 4.51c.05.42.1.31.23.2c.3-.23 1.04-1.03 1.62-1.55c.67-.6.95-.7 1.27-.7c.35 0 .5.17.5.6c0 .3-.07.66-.1.85c-.16.82-.36 1.85-.36 1.98c0 .18.05.29.16.29c.45 0 1.54-1.02 2.03-1.86c.68-1.15.94-2.05.94-2.35c0-.26-.14-.5-.53-.5c-.19 0-.4.07-1.01.68c-.33.33-.64.61-.76.72c-.25.23-.5.46-.73.62c-.25.18-.5.17-.5-.31c0-.35.02-.6.05-.77c.16-.9.47-2.79.47-3.01c0-.09-.02-.17-.07-.23c-.05-.06-.14-.06-.22-.03c-.95.31-2.64 1.67-3.54 2.35"/>
+                </svg>
                 Message Now
             </a>
         </div>
         <div class="footer-info">
-            <p>🚀 Powered by Android & Determination</p>
-            <p>📍 Coding From: Smartphone</p>
+            <p class="powered-by">
+                🚀 Powered by Android & Pure Determination<br>
+                <span class="device-specs">POCO C55 | 4GB RAM | No Laptop Used</span>
+            </p>
         </div>
     </footer>
-
+    
     <!-- Contact Modal -->
     <div id="contact-modal" class="modal hidden">
         <div class="modal-content glass-form">
@@ -116,7 +147,9 @@
                     <label for="modal-telegram-handle">Your Telegram ID</label>
                 </div>
                 <button type="submit" class="telegram-button">
-                    <svg><!-- Paper Plane SVG --></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
                     Initiate Chat
                 </button>
             </form>
