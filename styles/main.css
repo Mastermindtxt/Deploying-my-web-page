@@ -81,3 +81,154 @@ body {
     text-align: center;
 }
 
+/* ===== LANDSCAPE ADJUSTMENTS ===== */
+@media (orientation: landscape) {
+    #hero {
+        min-height: calc(100vh - 80px); /* Account for navbar height */
+        padding-top: 80px; /* Navbar height offset */
+    }
+
+    .name-gradient {
+        font-size: 3rem; /* Reduce text size */
+        line-height: 1.2; /* Better spacing */
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    .device-model {
+        transform: scale(0.8); /* Shrink 3D model */
+    }
+}
+
+/* ===== HERO CONTENT POSITIONING ===== */
+.hero-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+/* ===== NAVBAR HEIGHT FIX ===== */
+.glass-nav {
+    height: 80px; /* Fixed navbar height */
+    padding: 1rem 1.5rem; /* Reduced vertical padding */
+}
+
+/* ===== VIEWPORT FIX FOR MOBILE ===== */
+@supports (-webkit-touch-callout: none) {
+    /* Safari/iOS specific fix */
+    #hero {
+        min-height: -webkit-fill-available;
+        height: 100vh;
+    }
+}
+
+/* Social Links Styling */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(124, 58, 237, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--neon-purple);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: rgba(124, 58, 237, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px var(--neon-purple);
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--lavender);
+}
+
+/* ===== BIO SECTION ENHANCEMENTS ===== */
+.bio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+.phone-3d-container {
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid var(--neon-purple);
+}
+
+.device-details {
+    padding: 1.5rem;
+    background: var(--deep-purple);
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+
+.spec-list {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.spec-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Holographic Card Enhancements */
+.holographic-card {
+    position: relative;
+    padding: 2rem;
+    background: linear-gradient(145deg, 
+        rgba(46,16,101,0.8) 0%,
+        rgba(12,4,30,0.6) 100%);
+    border-radius: 20px;
+    border: 1px solid var(--lavender);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 30px rgba(124,58,237,0.2);
+}
+
+.glow-item {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 3px solid var(--neon-purple);
+    transition: all 0.3s ease;
+}
+
+.glow-item:hover {
+    background: rgba(124,58,237,0.1);
+    transform: translateX(10px);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
