@@ -14,3 +14,11 @@ My project structure./
 
 ## Visite Site from Here.
 > [Clickme](https://mastermindtxt.github.io/Deploying-my-web-page/)
+---
+### **Home page completed 70% according to my degine.**
+
+*remaining things are +*
+> - Animations.
+> - Adding Hower transitions on my name.
+> - Finishing contact area and footer.
+> - Making Nav bar more look cool.
